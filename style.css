@@ -14,8 +14,7 @@ body{
   padding: 20px;;
 }
 #card{
-  width : 600px;
-  height : 400px;
+
   box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.75);
   border-radius:5px;
   overflow:hidden;
@@ -33,7 +32,7 @@ body{
 }
 #bottom-left-section{
   display: inline-block;
-  width:50%;
+  width:100%;
   height:100%;
   vertical-align:top;
   background-color:#2ab2af;
@@ -42,7 +41,7 @@ body{
 }
 #bottom-right-section{
   display: inline-block;
-  width:50%;
+  width:100%;
   height:100%;
   background-color: #2EBFBD;
   vertical-align:top;
@@ -102,4 +101,16 @@ button:hover{
   cursor:pointer;
   background-color:#A9C42D;
   transform:scale(1.02);
+}
+
+@media(min-width:576px){
+   #card{
+    width:550px;
+        height:400px;
+
+  }
+  #bottom-left-section, #bottom-right-section {
+    width:50%;
+  }
+ 
 }
